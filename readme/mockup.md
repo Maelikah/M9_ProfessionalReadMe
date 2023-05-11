@@ -6,7 +6,7 @@ license badges go here
 </br>
 ---
 
-## Description
+##   📝 Description
 ---
 Readme file description goes here
 
@@ -14,15 +14,20 @@ Readme file description goes here
 </br>
 
 ---
-## Table of Contents
+## 📑 Table of Contents
 ---
-TOC goes here
+- [Installation](#instalation)
+- [Usage](#usage)
+- [License](#license)
+- [Contribution](#contribution)
+- [Tests](#tests)
+- [Questions](#questions)
 </br>
 </br>
 
 ---
 
-## Installation
+##  💿 Installation
 ---
 Installation guidelines go here
 </br>
@@ -30,7 +35,7 @@ Installation guidelines go here
 
 ---
 
-## Usage
+##   💻 Usage
 ---
 Usage guidelines go here
 </br>
@@ -38,7 +43,7 @@ Usage guidelines go here
 
 ---
 
-## License
+##  🔏 License
 ---
 Licenses go here
 </br>
@@ -46,7 +51,7 @@ Licenses go here
 
 ---
 
-## Contribution
+## 🛠️ Contribution
 ---
 List of contributors goes here
 </br>
@@ -54,7 +59,7 @@ List of contributors goes here
 
 ---
 
-## Tests
+##   🧪 Tests
 ---
 Tests go here
 </br>
@@ -62,7 +67,7 @@ Tests go here
 
 ---
 
-## Questions
+##  💬 Questions
 ---
 Contact info goes here
 </br>

@@ -1,7 +1,7 @@
 # Professional README Generator
 
 
-## Description
+## Description 
 ---
 The purpose of this repository is to apply the knowledge I've gain on Node.js by generating a profesisonal README file based on user input on the command line using inquirer and fs
 </br>
@@ -53,6 +53,7 @@ The purpose of this repository is to apply the knowledge I've gain on Node.js by
 - https://www.npmjs.com/package/inquirer
 - https://nodejs.org/en/docs
 - https://nodejs.org/api/fs.html
+- https://emojipedia.org/
 - https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide
 
 </br>
