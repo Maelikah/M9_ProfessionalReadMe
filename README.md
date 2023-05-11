@@ -1,67 +1,66 @@
-# <Your-Project-Title>
+# Professional README Generator
+
 
 ## Description
+---
+The purpose of this repository is to apply the knowledge I've gain on Node.js by generating a profesisonal README file based on user input on the command line using inquirer and fs
+</br>
+</br>
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+---
+## Technologies Used
+---
+</br>
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+  <img align="center" alt="JS" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img align="center" alt="NodeJS" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img align="center" alt="HTML" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img align="center" alt="Screencastify" height="40" width="40" src="https://lh3.googleusercontent.com/EUMH8i8pznK0Qcp5-5-BtOw6cnImU8QlvxWEykRMj5KJiSDwQAw9_SEk2EWyROv2U_efI4WxBd6cxcKIAR0Q6efPZPLV1wtIdgbBO2fAiLPt6Q=s400">
 
-## Table of Contents (Optional)
+</br>
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+---
 
 ## Installation
+---
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+  1. Fork and clone repository to local machine. 
+  2. Run ```npm i``` to install dependencies in local project directory. 
+</br>
 
+---
 ## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+---
+1. Open integrated terminal.
+  2. Run ```node index.js```.
+  3. Answer the prompts that follow.
+  4. A sampleREADME.md will be generated and stored in the "readme" folder.
 
     ```md
     ![alt text](assets/images/screenshot.png)
     ```
+</br>
 
+---
 ## Credits
+---
 
-List your collaborators, if any, with links to their GitHub profiles.
+- https://shields.io/category/license
+- https://raw.githubusercontent.com/
+- https://www.npmjs.com/package/inquirer
+- https://nodejs.org/en/docs
+- https://nodejs.org/api/fs.html
+- https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+</br>
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+## License
+---
+N/A
+---
 
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
