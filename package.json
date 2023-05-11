@@ -1,5 +1,5 @@
 {
-  "name": "module9",
+  "name": "m9_professionalreadme",
   "version": "1.0.0",
   "description": "---\r The purpose of this repository is to apply the knowledge I've gain on Node.js by generating a profesisonal README file based on user input on the command line using inquirer and fs\r </br>\r </br>",
   "main": "index.js",

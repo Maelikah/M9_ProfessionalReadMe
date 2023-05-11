@@ -14,6 +14,15 @@ Readme file description goes here
 </br>
 
 ---
+
+##   ⌨️ Programming Languages
+---
+Used languages go here
+
+</br>
+</br>
+
+---
 ## 📑 Table of Contents
 ---
 - [Installation](#instalation)
@@ -74,3 +83,4 @@ Contact info goes here
 </br>
 
 ---
+

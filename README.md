@@ -54,6 +54,7 @@ The purpose of this repository is to apply the knowledge I've gain on Node.js by
 - https://nodejs.org/en/docs
 - https://nodejs.org/api/fs.html
 - https://emojipedia.org/
+- https://github.com/devicons/devicon/tree/master/icons
 - https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide
 
 </br>
