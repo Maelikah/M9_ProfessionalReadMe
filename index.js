@@ -76,6 +76,7 @@ inquirer
     type: 'input',
     name: 'email',
     message: 'Type your email address.',
+    default: "user@domain.com"
     },
 ])
 
@@ -90,7 +91,7 @@ inquirer
     // function to generate license data
 
     const renderLicenseData = (license) => {
-        return license !== "None" ? `This project is licensed under the termss of the ${license} license.` : "None"
+        return license !== "None" ? ` \`This project is licensed under the terms of the ${license} license.\` ` : "None"
     }
 
     // function to generate selected programming lenguages icons
@@ -136,14 +137,18 @@ ${renderLicenseBadge(answers.license)}
 
 ##   📝 Description
 
+
 ---
+
+</br>
 
 ${answers.description}
 
 </br>
-</br>
 
 ---
+
+</br>
 
 ${renderLanguageSection(answers.confirm)}
 
@@ -153,6 +158,8 @@ ${renderLanguageSection(answers.confirm)}
 
 ---
 
+</br>
+
 - [Installation](#💿-installation)
 - [Usage](#💻-usage)
 - [License](#🔏-license)
@@ -161,7 +168,7 @@ ${renderLanguageSection(answers.confirm)}
 - [Questions](#💬-questions)
 
 </br>
-</br>
+
 
 ---
 
@@ -169,10 +176,14 @@ ${renderLanguageSection(answers.confirm)}
 
 ---
 
+</br>
+
+\`\`\`
 ${answers.installation}
+\`\`\`
 
 </br>
-</br>
+
 
 ---
 
@@ -180,10 +191,12 @@ ${answers.installation}
 
 ---
 
+</br>
+
 ${answers.usage}
 
 </br>
-</br>
+
 
 ---
 
@@ -191,10 +204,14 @@ ${answers.usage}
 
 ---
 
+</br>
+
+\`\`\`
 ${renderLicenseData(answers.license)}
+\`\`\`
 
 </br>
-</br>
+
 
 ---
 
@@ -202,10 +219,13 @@ ${renderLicenseData(answers.license)}
 
 ---
 
+</br>
+
+
 ${answers.contribution}
 
 </br>
-</br>
+
 
 ---
 
@@ -213,16 +233,23 @@ ${answers.contribution}
 
 ---
 
+</br>
+
+
+\`\`\`
 ${answers.tests}
+\`\`\`
 
 </br>
-</br>
+
 
 ---
 
 ##  💬 [Questions](#📑-table-of-contents)
 
 ---
+
+</br>
 
 Please contact me at ${answers.email} with any questions.
 
