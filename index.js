@@ -121,12 +121,17 @@ inquirer
         # ${answers.title}
 
         </br>
+
         ${renderLicenseBadge(answers.license)}
+
         </br>
+
         ---
 
         ##   📝 Description
+
         ---
+
         ${answers.description}
 
         </br>
@@ -134,71 +139,96 @@ inquirer
 
         ---
 
-        ${renderLanguageSection}
+        ${renderLanguageSection(answers.confirm)}
 
-        
-        ## 📑 Table of Contents
         ---
+
+        ## 📑 Table of Contents
+
+        ---
+
         - [Installation](#instalation)
         - [Usage](#usage)
         - [License](#license)
         - [Contribution](#contribution)
         - [Tests](#tests)
         - [Questions](#questions)
+
         </br>
         </br>
 
         ---
 
         ##  💿 Installation
+
         ---
+
         ${answers.installation}
+
         </br>
         </br>
 
         ---
 
         ##   💻 Usage
+
         ---
+
         ${answers.usage}
+
         </br>
         </br>
 
         ---
 
         ##  🔏 License
+
         ---
+
         ${renderLicenseData(answers.license)}
+
         </br>
         </br>
 
         ---
 
         ## 🛠️ Contribution
+
         ---
+
         ${answers.contribution}
+
         </br>
         </br>
 
         ---
 
         ##   🧪 Tests
+
         ---
+
         ${answers.tests}
+
         </br>
         </br>
 
         ---
 
         ##  💬 Questions
+
         ---
+
         Please contact me at ${answers.email} with any questions.
-        To view more of my work, please visit my GitHub page at 
+
         </br>
-        [GitHub](https://github.com/${answers.github}/)
+
+        To view more of my work, please visit my GitHub page at [GitHub](https://github.com/${answers.github}/)
+
         </br>
         </br>
+
         ---
+        
     `;
 
     fs.writeFile("./readme/proReadME.md", readmeContent, (err) =>
