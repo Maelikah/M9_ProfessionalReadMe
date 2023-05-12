@@ -27,7 +27,7 @@ inquirer
     name: 'languages',
     message: 'Select the languages used in your project:',
     choices: ["HTML","CSS","JavaScript","NodeJS","SQL","React","Heroku"],
-    when: (answer) => answer.confirm,
+    when: (answers) => answers.confirm,
     },
     {
     type: 'editor',
@@ -54,6 +54,7 @@ inquirer
     type: 'editor',
     name: 'tests',
     message: 'Write tests for your application. Then provide examples on how to run them here.',
+    default: "npm test"
     },
     {
     type: 'input',
@@ -68,7 +69,110 @@ inquirer
 ])
 
 .then((answers) => {
-    const htmlPageContent = generateHTML(answers);
+
+    // function to generate license badge
+
+    const renderLicenseBadge = (license) => {
+        return license !== "None" ? `![Github License](https://img.shields.io/badge/license-${license}-blue.svg)` : '';
+    };
+
+    // function to generate license data
+
+    const renderLicenseData = (license) => {
+        return license !== "None" ? `Copyright @ ${license}. All rights reserved. Licensed under the ${license} license.` : "None"
+    }
+
+
+
+
+
+
+    const readmeContent = `
+        # ${answers.title}
+
+        </br>
+        license badges go here
+
+        </br>
+        ---
+
+        ##   📝 Description
+        ---
+        Readme file description goes here
+
+        </br>
+        </br>
+
+        ---
+
+        ##   ⌨️ Programming Languages
+        ---
+        Used languages go here
+
+        </br>
+        </br>
+
+        ---
+        ## 📑 Table of Contents
+        ---
+        - [Installation](#instalation)
+        - [Usage](#usage)
+        - [License](#license)
+        - [Contribution](#contribution)
+        - [Tests](#tests)
+        - [Questions](#questions)
+        </br>
+        </br>
+
+        ---
+
+        ##  💿 Installation
+        ---
+        Installation guidelines go here
+        </br>
+        </br>
+
+        ---
+
+        ##   💻 Usage
+        ---
+        Usage guidelines go here
+        </br>
+        </br>
+
+        ---
+
+        ##  🔏 License
+        ---
+        Licenses go here
+        </br>
+        </br>
+
+        ---
+
+        ## 🛠️ Contribution
+        ---
+        List of contributors goes here
+        </br>
+        </br>
+
+        ---
+
+        ##   🧪 Tests
+        ---
+        Tests go here
+        </br>
+        </br>
+
+        ---
+
+        ##  💬 Questions
+        ---
+        Contact info goes here
+        </br>
+        </br>
+        ---
+    `;
 
     fs.writeFile('index.html', htmlPageContent, (err) =>
     err ? console.log(err) : console.log('Successfully created index.html!')
