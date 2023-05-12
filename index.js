@@ -117,119 +117,120 @@ inquirer
 
     // Variable that will store all markdown file data
 
-    const readmeContent = `
-        # ${answers.title}
+    const readmeContent = 
+`
+# ${answers.title}
 
-        </br>
+</br>
 
-        ${renderLicenseBadge(answers.license)}
+${renderLicenseBadge(answers.license)}
 
-        </br>
+</br>
 
-        ---
+---
 
-        ##   📝 Description
+##   📝 Description
 
-        ---
+---
 
-        ${answers.description}
+${answers.description}
 
-        </br>
-        </br>
+</br>
+</br>
 
-        ---
+---
 
-        ${renderLanguageSection(answers.confirm)}
+${renderLanguageSection(answers.confirm)}
 
-        ---
+---
 
-        ## 📑 Table of Contents
+## 📑 Table of Contents
 
-        ---
+---
 
-        - [Installation](#instalation)
-        - [Usage](#usage)
-        - [License](#license)
-        - [Contribution](#contribution)
-        - [Tests](#tests)
-        - [Questions](#questions)
+- [Installation](#instalation)
+- [Usage](#usage)
+- [License](#license)
+- [Contribution](#contribution)
+- [Tests](#tests)
+- [Questions](#questions)
 
-        </br>
-        </br>
+</br>
+</br>
 
-        ---
+---
 
-        ##  💿 Installation
+##  💿 Installation
 
-        ---
+---
 
-        ${answers.installation}
+${answers.installation}
 
-        </br>
-        </br>
+</br>
+</br>
 
-        ---
+---
 
-        ##   💻 Usage
+##   💻 Usage
 
-        ---
+---
 
-        ${answers.usage}
+${answers.usage}
 
-        </br>
-        </br>
+</br>
+</br>
 
-        ---
+---
 
-        ##  🔏 License
+##  🔏 License
 
-        ---
+---
 
-        ${renderLicenseData(answers.license)}
+${renderLicenseData(answers.license)}
 
-        </br>
-        </br>
+</br>
+</br>
 
-        ---
+---
 
-        ## 🛠️ Contribution
+## 🛠️ Contribution
 
-        ---
+---
 
-        ${answers.contribution}
+${answers.contribution}
 
-        </br>
-        </br>
+</br>
+</br>
 
-        ---
+---
 
-        ##   🧪 Tests
+##   🧪 Tests
 
-        ---
+---
 
-        ${answers.tests}
+${answers.tests}
 
-        </br>
-        </br>
+</br>
+</br>
 
-        ---
+---
 
-        ##  💬 Questions
+##  💬 Questions
 
-        ---
+---
 
-        Please contact me at ${answers.email} with any questions.
+Please contact me at ${answers.email} with any questions.
 
-        </br>
+</br>
 
-        To view more of my work, please visit my GitHub page at [GitHub](https://github.com/${answers.github}/)
+To view more of my work, please visit my GitHub page at [GitHub](https://github.com/${answers.github}/)
 
-        </br>
-        </br>
+</br>
+</br>
 
-        ---
-        
-    `;
+---
+
+`;
 
     fs.writeFile("./readme/proReadME.md", readmeContent, (err) =>
     err ? console.log(err) : console.log('Successfully created readme file!')
