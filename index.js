@@ -14,9 +14,6 @@ const languageIcons = {
     Heroku: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" height="40" width="40"><path d="M114 13.9C114 7.3 108.7 2 102.1 2H25.9C19.3 2 14 7.3 14 13.9v100.3c0 6.6 5.3 11.9 11.9 11.9h76.3c6.6 0 11.9-5.3 11.9-11.9V13.9zm-4 .1v99.3c0 4.7-3.5 8.7-8.2 8.7H26.5c-4.7 0-8.5-4-8.5-8.7V14c0-4.7 3.9-8 8.5-8h75.2c4.7 0 8.4 3.6 8.4 8.3l-.1-.3zm-73 94.7l14.1-14.1L37 80.5zm14-60.9V18.4l-13.9.1s.1 45.9.2 45.7C80.1 47.5 77 59.4 77 59.4v49.4l-.1.2H90V59.5c0-27.1-39-11.7-39-11.7zM70 36h14.8c8-10 10.7-17 10.7-17H80.2S75.3 30 70 36z" fill="#6762A6"/></svg>',
 }
 
-
-
-
 // Use inquirer to build questions to obtain data for professional readme
 
 inquirer
@@ -44,12 +41,12 @@ inquirer
     when: (answers) => answers.confirm,
     },
     {
-    type: 'editor',
+    type: 'input',
     name: 'installation',
     message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running',
     },
     {
-    type: 'editor',
+    type: 'input',
     name: 'Usage',
     message: 'Provide instructions and examples on how to use your project.',
     },
@@ -60,12 +57,12 @@ inquirer
     choices: ["MIT", "GLP3.0", "BSD2", "BSD3", "None"],
     },
     {
-    type: 'editor',
+    type: 'input',
     name: 'contribution',
     message: 'List collaborators, third-parties assets or tutorials used to achieve your project',
     },
     {
-    type: 'editor',
+    type: 'input',
     name: 'tests',
     message: 'Write tests for your application. Then provide examples on how to run them here.',
     default: "npm test"
@@ -204,7 +201,7 @@ inquirer
         ---
     `;
 
-    fs.writeFile('index.html', htmlPageContent, (err) =>
-    err ? console.log(err) : console.log('Successfully created index.html!')
+    fs.writeFile("./readme/proReadME.md", readmeContent, (err) =>
+    err ? console.log(err) : console.log('Successfully created readme file!')
     );
 });
