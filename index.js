@@ -105,14 +105,18 @@ inquirer
     // Generate Programming Languages section
 
     const renderLanguageSection = (confirm) => {
-        return confirm !== false ? `
-        ##   ⌨️ Programming Languages
-            ---
-            ${languageIconString}
-            </br>
-            </br>
-            ---
-        ` : ""
+        return confirm !== false ? 
+`
+##   ⌨️ Programming Languages
+---
+</br>
+
+${languageIconString}
+
+</br>
+
+---
+`                               : ""
     }
 
     // Variable that will store all markdown file data
