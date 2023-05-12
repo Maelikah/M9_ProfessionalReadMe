@@ -57,7 +57,7 @@ inquirer
     choices: ["MIT", "GLP3.0", "BSD2", "BSD3", "None"],
     },
     {
-    type: 'input',
+    type: 'editor',
     name: 'contribution',
     message: 'List collaborators, third-parties assets or tutorials used to achieve your project',
     },
@@ -95,13 +95,14 @@ inquirer
 
     // function to generate selected programming lenguages icons
 
-    const renderLanguageIcons = answers.languages
-        .filter(language => languageIcons[language])
-        .map(language => languageIcons[language]);
+    let renderLanguageIcons = "";
+    if (answers.confirm) {
+        renderLanguageIcons = answers.languages
+            .filter(language => languageIcons[language])
+            .map(language => languageIcons[language])
+            .join(" ");
+    }
     
-    // Retrieve the selected languages in a string
-    const languageIconString = renderLanguageIcons.join(" ");
-
     // Generate Programming Languages section
 
     const renderLanguageSection = (confirm) => {
@@ -111,11 +112,11 @@ inquirer
 ---
 </br>
 
-${languageIconString}
+${renderLanguageIcons}
 
 </br>
 
----
+
 `                               : ""
     }
 
@@ -152,19 +153,19 @@ ${renderLanguageSection(answers.confirm)}
 
 ---
 
-- [Installation](#instalation)
-- [Usage](#usage)
-- [License](#license)
-- [Contribution](#contribution)
-- [Tests](#tests)
-- [Questions](#questions)
+- [Installation](#💿-installation)
+- [Usage](#💻-usage)
+- [License](#🔏-license)
+- [Contribution](#🛠️-contribution)
+- [Tests](#🧪-tests)
+- [Questions](#💬-questions)
 
 </br>
 </br>
 
 ---
 
-##  💿 Installation
+##  💿 [Installation](#📑-table-of-contents)
 
 ---
 
@@ -175,7 +176,7 @@ ${answers.installation}
 
 ---
 
-##   💻 Usage
+##   💻 [Usage](#📑-table-of-contents)
 
 ---
 
@@ -186,7 +187,7 @@ ${answers.usage}
 
 ---
 
-##  🔏 License
+##  🔏 [License](#📑-table-of-contents)
 
 ---
 
@@ -197,7 +198,7 @@ ${renderLicenseData(answers.license)}
 
 ---
 
-## 🛠️ Contribution
+## 🛠️ [Contribution](#📑-table-of-contents)
 
 ---
 
@@ -208,7 +209,7 @@ ${answers.contribution}
 
 ---
 
-##   🧪 Tests
+##   🧪 [Tests](#📑-table-of-contents)
 
 ---
 
@@ -219,7 +220,7 @@ ${answers.tests}
 
 ---
 
-##  💬 Questions
+##  💬 [Questions](#📑-table-of-contents)
 
 ---
 
@@ -227,12 +228,13 @@ Please contact me at ${answers.email} with any questions.
 
 </br>
 
-To view more of my work, please visit my GitHub page at [GitHub](https://github.com/${answers.github}/)
+To view more of my work, please visit my [GitHub](https://github.com/${answers.github}/) page.
 
-</br>
 </br>
 
 ---
+
+[Back to Top](#📝-description)
 
 `;
 
