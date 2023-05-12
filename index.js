@@ -3,6 +3,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+
 // Declare variable to hold svg icons for programming languages
 
 const languageIcons = {
@@ -15,7 +16,7 @@ const languageIcons = {
 }
 
 // Use inquirer to build questions to obtain data for professional readme
-
+EDITOR='code --wait'
 inquirer
 .prompt([
     {
@@ -41,13 +42,13 @@ inquirer
     when: (answers) => answers.confirm,
     },
     {
-    type: 'input',
+    type: 'editor',
     name: 'installation',
     message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running',
     },
     {
-    type: 'input',
-    name: 'Usage',
+    type: 'editor',
+    name: 'usage',
     message: 'Provide instructions and examples on how to use your project.',
     },
     {
@@ -62,7 +63,7 @@ inquirer
     message: 'List collaborators, third-parties assets or tutorials used to achieve your project',
     },
     {
-    type: 'input',
+    type: 'editor',
     name: 'tests',
     message: 'Write tests for your application. Then provide examples on how to run them here.',
     default: "npm test"
@@ -91,7 +92,7 @@ inquirer
     // function to generate license data
 
     const renderLicenseData = (license) => {
-        return license !== "None" ? ` \`This project is licensed under the terms of the ${license} license.\` ` : "None"
+        return license !== "None" ? ` This project is licensed under the terms of the \`${license}\` license. ` : "None"
     }
 
     // function to generate selected programming lenguages icons
@@ -147,8 +148,6 @@ ${answers.description}
 </br>
 
 ---
-
-</br>
 
 ${renderLanguageSection(answers.confirm)}
 
@@ -206,9 +205,9 @@ ${answers.usage}
 
 </br>
 
-\`\`\`
+
 ${renderLicenseData(answers.license)}
-\`\`\`
+
 
 </br>
 
@@ -269,3 +268,4 @@ To view more of my work, please visit my [GitHub](https://github.com/${answers.g
     err ? console.log(err) : console.log('Successfully created readme file!')
     );
 });
+
