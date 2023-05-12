@@ -37,9 +37,30 @@ The purpose of this repository is to apply the knowledge I've gain on Node.js by
 3. Answer the prompts that follow.
 4. A sampleREADME.md will be generated and stored in the "readme" folder.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+The github URL containing the code for this project is located at:
+
+https://github.com/Maelikah/M9_ProfessionalReadMe
+
+The github pages URL containing the deployed webpage is located at:
+
+https://maelikah.github.io/M9_ProfessionalReadMe
+
+
+
+
+  User Input Functionality: 
+
+![User Input Walkthrough Preview](./assets/userinput_walkthrough.gif)
+
+</br>
+
+Code Functionality:
+
+![Code Generation Walkthrough Preview](./assets/code_walkthrough.gif)
+
+
+
+
 </br>
 
 ---
