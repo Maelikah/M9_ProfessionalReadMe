@@ -50,13 +50,6 @@ The github URL containing the code for this project is located at:
 
 https://github.com/Maelikah/M9_ProfessionalReadMe
 
-The github pages URL containing the deployed webpage is located at:
-
-https://maelikah.github.io/M9_ProfessionalReadMe
-
-
-
-
   User Input Functionality: 
 
 ![User Input Walkthrough Preview](./assets/userinput_walkthrough.gif)
