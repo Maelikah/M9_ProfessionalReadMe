@@ -12,9 +12,14 @@ The purpose of this repository is to apply the knowledge I've gain on Node.js by
 ---
 </br>
 
+<div style="display: inline_block">
 <img src="./assets/javascript.svg" alt="JavaScript">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="./assets/nodejs.svg" alt="NodeJS">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="./assets/screen-castify-red.svg" alt="screencastify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
 
 </br>
 
